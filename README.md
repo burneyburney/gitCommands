@@ -40,6 +40,7 @@ $ git clone https://github.com/yourUsername/yourReponame.git
 # make a pull request!
 $ git pull # use this after someone else has made a change to the online repo 
            # your working on and you want to make your local repo up to date
+           
 ```
 
 ### Want to remove a file frome online github repo but keep it locally
@@ -52,6 +53,8 @@ $ git rm --cached localFileName
 
 ### Commands for fixing problems
 ``` sh
+$ git reset [commit] #Undoes all commits after [commit], preserving changes locally
+                    
 # undo multiple commits  
 $ git reset --hard commitSHA###... # changes staging index and 
                                    # local folder to match online 
